@@ -34,7 +34,7 @@ whichModal = input("Enter 1 to use Gaussian prediction, and 2 to use my hardcode
 trainPer = int(trainPer)
 whichModal = int(whichModal)
 if trainPer <= 0 or trainPer >= 100:
-	print("Invalid training percentage. Reverting to default of 70%")
+	print("Invalid training percentage. Reverting to default of 30%")
 	trainPer = 30
 trainPer = 1 - (trainPer / 100)
 
