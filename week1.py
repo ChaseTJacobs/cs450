@@ -35,7 +35,7 @@ trainPer = int(trainPer)
 whichModal = int(whichModal)
 if trainPer <= 0 or trainPer >= 100:
 	print("Invalid training percentage. Reverting to default of 70%")
-	trainPer = 3
+	trainPer = 30
 trainPer = 1 - (trainPer / 100)
 
 if whichModal < 1 or whichModal > 2:
