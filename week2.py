@@ -67,6 +67,7 @@ def findPercentage(predicted, ytest):
 	print ("% of correct guesses: ", float("{0:.2f}".format(successes/len(ytest) * 100)), "% (",successes,"/",len(ytest),")")
 	
 def knn(k, iris):
+	print("K = ", k)
 	scaler = StandardScaler(copy=True, with_mean=True, with_std=True)
 	
 	scaler.fit(iris.data)
@@ -79,7 +80,7 @@ def knn(k, iris):
 	print("My percentage: ")
 	findPercentage(targets_predicted, ytest)
 	
-	classifier2 = KNeighborsClassifier(n_neighbors=3)
+	classifier2 = KNeighborsClassifier(n_neighbors=k)
 	model2 = classifier2.fit(xtrain, ytrain)
 	predictions2 = model2.predict(xtest)
 	print("sklearn percentage: ")
@@ -88,6 +89,7 @@ def knn(k, iris):
 	
 iris = datasets.load_iris()
 
-
-
 knn(3, iris)
+knn(5, iris)
+knn(7, iris)
+knn(30, iris)
