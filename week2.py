@@ -88,7 +88,7 @@ def knn(k, iris):
 	return 0
 	
 iris = datasets.load_iris()
-
+print(iris.data)
 knn(3, iris)
 knn(5, iris)
 knn(7, iris)
