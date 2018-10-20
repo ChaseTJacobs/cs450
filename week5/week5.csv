@@ -1,0 +1,13 @@
+CreditScore,Income,Collateral,Should_Loan
+Good,High,Good,TRUE
+Good,High,Poor,TRUE
+Good,Low,Good,TRUE
+Good,Low,Poor,FALSE
+Average,High,Good,TRUE
+Average,Low,Poor,FALSE
+Average,High,Poor,TRUE
+Average,Low,Good,FALSE
+Low,High,Good,TRUE
+Low,High,Poor,FALSE
+Low,Low,Good,FALSE
+Low,Low,Poor,FALSE

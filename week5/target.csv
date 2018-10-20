@@ -1,0 +1,11 @@
+CreditScore,Income,Collateral,Answer
+Good,Low,Poor,FALSE
+Average,Low,Poor,FALSE
+Good,Low,Good,TRUE
+Low,Low,Good,FALSE
+Low,High,Good,TRUE
+Average,High,Good,TRUE
+Average,Low,Good,FALSE
+Low,High,Poor,FALSE
+Good,High,Good,TRUE
+Good,High,Poor,TRUE
